@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://127.0.0.1:5500/project1/introduction%20to%20band%20.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{  background-color: black;
+    }
+
+    .imgs{
+        margin-left: 250px;
+    }
+
+    .pic1{ 
+        border:33%; 
+        size: auto;  float:left; border: 1px solid #fff;
+        margin-left:-200px;
+
+    }
+
+    .pic2{ 
+        margin-left: 170px;
+        border:33%; 
+      size: auto;  float:left; border: 1px solid #fff;
+    }
+    .pic3{ 
+        border: 33%; 
+        size: 500px; float:right; border: 1px solid #fff;
+        margin-left:1180px;
+        margin-top: -700px;
+       
+    }
+
+
+    .pic4{ 
+        border: 50%; 
+ float:left; border: 1px solid #fff;
+        margin-left: 500px;
+        margin-top: 100px;
+        size: auto; 
+        display: block;
+
+    }
+    .pic5{ 
+        border:50%; 
+        size: auto; 
+         float:right; border: 1px solid #fff;
+        margin-right: 590px;
+        margin-top: 100px;
+    }
+
+
+    .members{ 
+        color:#fff; 
+        text-align: center;
+        font-size: 30px;
+        size: auto; 
+    }
+
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="members"> 
+        <h1> MEMBERS</h1>
+    </div>
+
+    </header>
+    <div class=" imgs"> 
+    <div class="pic1">
+        <img src="./Document_files/3709022.jpg">
+      </div>
+    
+      <div class="pic2">
+        <img src="./Document_files/images.jpg">
+      </div>
+
+      <div class="pic3">
+        <img src="./Document_files/Matt-Thompson-Picture-with-Caligulan-Shirt-2.jpg">
+      </div>
+    </div>
+      <div class="pic4">
+        <img src="./Document_files/Mike Wead 5 600.jpg">
+      </div>
+      
+      <div class="pic5">
+        <img src="./Document_files/pontus_egbert.jpg">
+      </div>
+      
+      
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
