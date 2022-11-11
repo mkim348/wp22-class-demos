@@ -1,15 +1,230 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Web Programming | STUDENT NAME | Project 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body{
+		background-color: black;
+	}
+* {box-sizing: border-box;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+	background-color: black;
+  max-width: 1000px;
+  display: block;
+	margin-left: 500px;
+
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+nav{
+   height: 60px;
+   line-height:60px;
+   Float:right; 
+
+}
+
+
+.lnb{
+   width:100%; height:100%; 
+margin-right: 200px;}
+
+
+.lnb>li{
+   float:left;}
+
+.lnb>li>a:hover{
+color: red;
+}
+ 
+.lnb li a {
+   font-weight:bold;
+   text-transform:uppercase;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 40px; 
+	color:white;
+}
+ 
+.lnb>li>a::after{
+   content: "       ";
+   margin:0px 10px 0px 6px;}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease-out;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.spotify{ 
+	height: 100px;
+    width: 400px;
+	position: static;
+	margin-top: 0.5%;
+
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.texts{ 
+	margin-left: 100px; 
+	margin-right: 100px;
+	margin-bottom:100px;
+	font-size: large;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color:#fff; 
+margin-top:100px;
+float:left;
+text-align: center;
+
+}
+
+
+
+</style>
 </head>
 
-<body>
+<header>
+	<nav>
+	   <h2>  main navigation</h2>
+	   <ul class="lnb">
+		   <li> <a href="introduction to band .html"> about </a></li>
+	   </ul>
+	</nav>
 
-	<!-- Put your code here! -->
+	<div class= "spotify">
+		<a href="https://open.spotify.com/playlist/3JYYSN2egKEhT9o39dnxRl?si=742ce1d8c4e64977">
+			<img alt="Qries" src="/project1/pictures/Untitled-5.png" width= 10% class="logo">
+		 </a>
+	</div>
+
+</header>
+
+
+<body> 
+
+
+	<div class="logo"> 
+	<a href="https://en.wikipedia.org/wiki/King_Diamond">
+		<img alt="Qries" src="/project1/pictures/Untitled-1.png"
+		width="650" height="300" class="logo">
+	 </a>
+	</div>
+
+
+<div class="texts">
+	<p> 
+King Diamond's first heavy rock band was called Brainstorm (1974–76), with Jeanette Blum (Jean Blue) on vocals and bass, Michael Frohn (Mike West) on guitar and Jes Jacobsen (Jesse James) on drums. Diamond left Brainstorm and began singing with local Danish hard rock band Black Rose.<br> He began experimenting with horror-themed theatrics and shaping a malevolent quasi-Satanic stage persona. He left Black Rose and joined the punk-metal band Brats, where he met Hank Shermann. <br>The two were soon asked to help Michael Denner (also formerly a member of Brats) with his own project, Danger Zone. 
+<br>This band included Timi Hansen, and the musicians would join with Diamond in 1980 to become Mercyful Fate.
+	</p> 
+
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="/project1/pictures/slideshow1.jpg" style="width:150%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="/project1/pictures/slideshow2.jpg" style="width:150%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="/project1/pictures/slideshow3.jpg" style="width:150%">
+</div>
+
+<div class="mySlides fade">
+	<div class="numbertext">4 / 7</div>
+	<img src="/project1/pictures/slideshow4.jpg" style="width:150%">
+  </div>
+
+<div class="mySlides fade">
+	<div class="numbertext">5 / 7</div>
+	<img src="/project1/pictures/slideshow5.jpg" style="width:150%">
+  </div>
+
+<div class="mySlides fade">
+	<div class="numbertext"> 6  / 7</div>
+	<img src="/project1/pictures/slideshow6.jpg" style="width:150%">
+  </div>
+
+<div class="mySlides fade">
+	<div class="numbertext"> 7/ 7</div>
+	<img src="/project1/pictures/slideshow7.jpg" style="width:150%">
+  </div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+   <span class="dot"></span>  
+</div>
+<br> 
 
 </body>
 
-</html>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+</html> 
