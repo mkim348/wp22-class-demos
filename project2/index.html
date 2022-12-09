@@ -8,8 +8,186 @@
 
 <body>
 
-	<!-- Put your code here! -->
+	<!doctype html> 
+	<html lang="en">
+		<head> 
+		<meta charset="utf-8">  
+		 <title> float </title>   
+	<style>
 
+@charset "utf-8";
+*{
+  margin:0;padding:0;
+  box-sizing: border-box;
+}
+
+html{
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+   font-size:16px;
+   line-height:1; 
+}
+
+a{
+  text-decoration: none;
+  color:#000;
+}
+
+li{
+  list-style: none;
+}
+
+.clearfix:after{
+  content: " ";
+  display: block;
+  clear: both;
+}
+		.wrap{ 
+    width:1000px; 
+    margin:0 auto; 
+
+}
+.header{ 
+    width:100%; 
+    height:400px; 
+    padding:10px; 
+    background:#fff; 
+    margin-bottom: 20px;
+    border:2px solid#000;
+    background: url(ch5.jpg) no-repeat center/cover; 
+}
+
+h1{ 
+    width:120px; 
+    height:70px;
+    line-height:70px; 
+    border:2px solid#fff; 
+    color:#fff  
+}
+
+h1>a{ 
+    display:block; 
+    width: 100%; 
+    height:100%; 
+}
+.nav{
+    width:100%; 
+    height:60px; line-height:60px; 
+     text-align:center;
+}
+
+.lnb{ 
+    width:100%; 
+    height:100%; 
+}
+
+.lnb>li{
+    width: 25%; 
+    height: 100%; 
+    float:left; 
+    border:1px solid#000; 
+}
+
+ 
+
+.lnb>li>a{ 
+    background-color: lightgray;
+    width:100%;height: 100%; 
+    display: block;
+
+}
+
+.left{ 
+    width: 500px; 
+    background: #fff; 
+    float:left;
+    border:2px solid #000
+}
+
+.left h2{ 
+    background:#ccc; 
+    margin-bottom:20px;
+}
+.left p{ 
+    line-height:1.5; 
+    margin-bottom:20px;
+    border:1px solid#000; 
+}
+.right{ 
+    width:500px; 
+    background: #fff;
+    float:right; 
+    border:2px solid #000
+}
+
+
+.right h2{ 
+    background:#ccc; 
+    margin-bottom:20px;
+}
+.right p{ 
+    line-height:1.5; 
+    margin-bottom:20px;
+    border:1px solid#000; 
+}
+
+.footer{ 
+    clear:both; 
+    width:100%; 
+    height:100px;line-height: 100px;
+    margin-top:20px; 
+    float:left;
+    text-align: center;
+    background-color: #fff;
+    height:60px; line-height:60px; 
+    border:2px solid#000;  
+}
+
+	</style>
+
+</head>
+	<body> 
+		<div class="wrap"> 
+		<div class="header">
+			<h1><a href="#"> AISUO  </a></h1>
+
+				</div>
+				<div class="nav"> 
+					<ul class="lnb"> 
+						<li> <a href="#"> more info</a></li>
+						<li> <a href="#">  pics</a></li>
+						<li> <a href="#"> references  </a></li>
+						<li> <a href="#"> Status </a></li>
+					</ul>   
+
+					
+				</div>
+				<div class="left"> 
+					<h2> AISUO  </h2>
+					<p>As of the end of 2014, the only UAV developed by Aisuo was an unmanned helicopter in conventional layout with a pair of skids as landing gear. The unmanned helicopter was developed by utilizing commercial off-the-shelf (COTS) subsystems such as fuselage and flight control systems that were already used by competition model airplanes developed by Aisuo, with necessary modifications to meet the requirements of application to UAVs. [1]
+
+                      </p>
+					<p> The main rotor of the UAV can be folded to save space needed for storage and transportation, and the UAV is capable of carrying ten to twenty liters of chemicals for crop dusting in Chinese agricultural provinces such as Henan.</p>
+				</div>
+				<div class="right"> 
+					<h2>UAV </h2>
+					<p>   Although mainly intended for agricultural application, the unmanned helicopter is also capable of performing other tasks such as aerial photography, cinematography, and survey missions. It was used in the aerial cinematography of the blockbuster Tai Chi Hero.</p>
+					<p> [1] These missions were actually carried out before the crop dusting applications for which the aircraft was originally intended. The most significant application of the unmanned helicopter, however, is its deployment by Chinese authorities during the 2013 Lushan earthquake for post-disaster assessment mission</p>
+				</div>
+				<div class="footer"> 
+                    <p> 
+                        References
+ "Aisuo Unmanned helicopter". Retrieved August 8, 2013.
+ "Aisuo UAV". Archived from the original on January 2, 2015.
+
+                    </p>
+                 </div>
+                
+			</div>
+		
+		</html>
 </body>
 
 </html>
